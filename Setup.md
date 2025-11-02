@@ -58,6 +58,12 @@ Get-WinGetPackage | Where-Object -Property Id -In $packages | Sort-Object -Prope
 
 ## PowerShell modules
 
+```pwsh
+#Install-Module -Name Microsoft.WinGet.Client # Already installed
+Install-Module -Name posh-git                 # 
+Install-Module -Name Terminal-Icons           # 
+```
+
 ## Custom installation
 
 - Office
