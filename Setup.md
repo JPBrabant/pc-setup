@@ -2,7 +2,7 @@
 
 ## PowerShell
 
-By default on Windows 11, Windows PowerShell (v5) is installed, we start by installing PowerShell Core (v7).
+On Windows 11, Windows PowerShell (v5) is installed by default. Start by installing PowerShell Core (v7).
 
 ```pwsh
 winget install --exact --id Microsoft.PowerShell
@@ -10,28 +10,29 @@ winget install --exact --id Microsoft.PowerShell
 
 ## WinGet wrapper
 
-In a new Windows Terminal Window with PowerShell 7, we will install a wrapper for WinGet. WinGet can be used with 
-`winget.exe` but it easier with the wrapper that follow PowerShell conventions.
+Open a new Windows Terminal window running PowerShell 7 and install the WinGet wrapper module. You can use WinGet via
+`winget.exe`, but it's easier with the wrapper that follows PowerShell conventions.
 
 ```pwsh
 Install-Module -Name Microsoft.WinGet.Client
 Import-Module -Name Microsoft.WinGet.Client
 ```
 
-# Main softwares
+
+# Main software
 
 ## Winget
 
 ```pwsh
 $packages = @(
 #   "Microsoft.PowerShell"          # Installed previously
-#   "Git.Git"                       # Need a custom install
-#   "Microsoft.WindowsTerminal"     # Shoud already be installed by default on Win 11
-    "astral-sh.uv"                  # For python
-    "Microsoft.Edit"                # As a command line text editor for Git
+#   "Git.Git"                       # Needs a custom install
+#   "Microsoft.WindowsTerminal"     # Should already be installed by default on Win 11
+    "astral-sh.uv"                  # For Python
+    "Microsoft.Edit"                # Command line text editor for Git
     "JanDeDobbeleer.OhMyPosh"       # To style the prompt
     "Microsoft.VisualStudioCode"    #
-    "Microsoft.PowerToys"           # For markdown and pdf preview, alway on top and ZoomIt
+    "Microsoft.PowerToys"           # For Markdown and PDF preview, Always On Top and ZoomIt
     "AutoHotkey.AutoHotkey"         #
     "Apryse.XodoPDFReader"          #
     "7zip.7zip"                     #
@@ -56,15 +57,17 @@ Get-WinGetPackage | Where-Object -Property Id -In $packages | Sort-Object -Prope
 
 ## Special winget command for `Git`
 
+See my learning-git repository for a script to install Git with the correct settings.
+
 ## PowerShell modules
 
 ```pwsh
 #Install-Module -Name Microsoft.WinGet.Client # Already installed
-Install-Module -Name posh-git                 # Autocomplete for git
-Install-Module -Name Terminal-Icons           # Icons for Get-ChildItems
+Install-Module -Name posh-git                 # Autocomplete for Git
+Install-Module -Name Terminal-Icons           # Icons for Get-ChildItem output
 ```
 
-## Custom installation
+## Custom installations
 
 - Office
 - Cover (by French Fry Software)
@@ -74,4 +77,8 @@ Install-Module -Name Terminal-Icons           # Icons for Get-ChildItems
 
 ## Font
 
-winget install ryanoasis.CaskaydiaCove -s winget-font
+A winget package is available to install the Cascadia/Caskaydia Nerd Font from the Nerd Fonts project, and there is also the official Microsoft repository: https://github.com/microsoft/cascadia-code
+
+```pwsh
+Install-WinGetPackage -MatchOption Equals -Source winget-font -Id ryanoasis.CaskaydiaCove
+```
