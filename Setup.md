@@ -60,8 +60,8 @@ Get-WinGetPackage | Where-Object -Property Id -In $packages | Sort-Object -Prope
 
 ```pwsh
 #Install-Module -Name Microsoft.WinGet.Client # Already installed
-Install-Module -Name posh-git                 # 
-Install-Module -Name Terminal-Icons           # 
+Install-Module -Name posh-git                 # Autocomplete for git
+Install-Module -Name Terminal-Icons           # Icons for Get-ChildItems
 ```
 
 ## Custom installation
