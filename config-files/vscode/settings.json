@@ -1,4 +1,8 @@
 {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.fontFamily": "'CaskaydiaMono Nerd Font', 'Cascadia Code NF', Consolas, 'Courier New', monospace",
+
     "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.editor.empty.hint": "hidden",
@@ -15,6 +19,6 @@
         "editor.wordWrap": "on"
     },
     "notebook.lineNumbers": "on",
-    "terminal.integrated.fontFamily": "'CaskaydiaMono Nerd Font'",
+    "terminal.integrated.fontFamily": "'CaskaydiaMono Nerd Font', 'Cascadia Code NF', Consolas, 'Courier New', monospace",
     "git.openRepositoryInParentFolders": "never"
 }
