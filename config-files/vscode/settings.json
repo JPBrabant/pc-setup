@@ -1,0 +1,20 @@
+{
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.empty.hint": "hidden",
+    "security.workspace.trust.enabled": false,
+    "explorer.confirmPasteNative": false,
+    "explorer.confirmDelete": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "[plaintext]": {
+        "editor.wordWrap": "on"
+    },
+    "notebook.lineNumbers": "on",
+    "terminal.integrated.fontFamily": "'CaskaydiaMono Nerd Font'",
+    "git.openRepositoryInParentFolders": "never"
+}
