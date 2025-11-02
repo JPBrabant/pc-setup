@@ -20,10 +20,11 @@
     // In an empty file, don't show recommendations
     "workbench.editor.empty.hint": "hidden",
 
-    
+    // Disable delete confirmation
+    "explorer.confirmDelete": false,
+
     // TODO : Clean those settings
     "explorer.confirmPasteNative": false,
-    "explorer.confirmDelete": false,
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
