@@ -5,6 +5,7 @@
 
     // Prefer Cascadia Code Nerd Font (ligatures and icons)
     "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'Cascadia Code NF', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
 
     // No welcome screen
     "workbench.startupEditor": "none",
