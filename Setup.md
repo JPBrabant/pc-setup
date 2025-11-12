@@ -33,6 +33,8 @@ $packages = @(
     "JanDeDobbeleer.OhMyPosh"       # To style the prompt
     "Microsoft.VisualStudioCode"    #
     "Microsoft.PowerToys"           # For Markdown and PDF preview, Always On Top and ZoomIt
+    "Microsoft.PowerBI"             # For work
+    "Graphviz.Graphviz"             # To create graphs
     "AutoHotkey.AutoHotkey"         #
     "Apryse.XodoPDFReader"          #
     "7zip.7zip"                     #
