@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config 'catppuccin' | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\catppuccin.omp.json" | Invoke-Expression
 
 Import-Module -Name posh-git                # Auto-complete for Git
 Import-Module -Name Microsoft.WinGet.Client # PowerShell style wrapper for WinGet
