@@ -1,0 +1,5 @@
+1Password                — https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager/
+Archive Page             — https://addons.mozilla.org/en-US/firefox/addon/archive-page/
+Old Reddit Redirect      — https://addons.mozilla.org/en-US/firefox/addon/old-reddit-redirect/
+Reddit Enhancement Suite — https://addons.mozilla.org/en-US/firefox/addon/reddit-enhancement-suite/
+uBlock Origin            — https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
