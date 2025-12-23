@@ -1,8 +1,8 @@
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\catppuccin.omp.json" | Invoke-Expression
 
-Import-Module -Name posh-git                # Auto-complete for Git
+Import-Module -Name posh-git # Auto-complete for Git
 Import-Module -Name Microsoft.WinGet.Client # PowerShell style wrapper for WinGet
-Import-Module -Name Terminal-Icons          # Icons for files with Get-ChildItems
+Import-Module -Name Terminal-Icons # Icons for files in Get-ChildItems
 
 # Network Utilities
 function Get-IP { 
@@ -21,4 +21,4 @@ function Get-IP {
 }
 
 # Desktop
-function Set-DesktopLocation { Set-Location -Path ( [Environment]::GetFolderPath('Desktop') ) }
+$Desktop = [Environment]::GetFolderPath('Desktop')
