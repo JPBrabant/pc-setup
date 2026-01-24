@@ -38,7 +38,6 @@ $packages = @(
     "astral-sh.uv"                  # Python
     "Microsoft.DotNet.SDK.10"       # .NET (latest version `Find-WinGetPackage Microsoft.DotNet.SDK`)
     "OpenJS.NodeJS"                 # NodeJS and NPM
-    "Microsoft.WinAppCli"           # 
 
     # Work related
     "Microsoft.PowerBI"             # 
