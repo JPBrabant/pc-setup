@@ -20,5 +20,6 @@ function Get-IP {
     return $ip
 }
 
-# Desktop
-$Desktop = [Environment]::GetFolderPath('Desktop')
+# Common paths
+Set-Variable -Name DESKTOP -Value ([Environment]::GetFolderPath('Desktop')) -Option ReadOnly
+Set-Variable -Name DEV -Value ("C:\dev") -Option ReadOnly
