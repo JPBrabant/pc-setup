@@ -91,7 +91,9 @@ Install-Module -Name Terminal-Icons           # Icons for Get-ChildItem output
 
 ## Font
 
-A winget package is available to install the Cascadia/Caskaydia Nerd Font from the Nerd Fonts project, and there is also the official Microsoft repository: https://github.com/microsoft/cascadia-code
+A winget package is available to install the Cascadia/Caskaydia Nerd Font from the Nerd Fonts project, and there is also the official Microsoft repository: [Cascadia Code](<https://github.com/microsoft/cascadia-code>).
+
+[CaskaydiaCove Nerd Font:](<https://www.nerdfonts.com/font-downloads>)
 
 ```pwsh
 Install-WinGetPackage -MatchOption Equals -Id ryanoasis.CaskaydiaCove -Source winget-font 
