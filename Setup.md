@@ -5,7 +5,7 @@
 On Windows 11, Windows PowerShell (v5) is installed by default. Start by installing PowerShell Core (v7).
 
 ```pwsh
-winget install --exact --id Microsoft.PowerShell
+winget install --exact --id Microsoft.PowerShell --source winget
 ```
 
 ## WinGet wrapper
@@ -63,7 +63,7 @@ $packages = @(
 )
 
 # Install all packages
-ForEach-Object -InputObject $packages -Process { Install-WinGetPackage -MatchOption Equals -Id $_ }
+ForEach-Object -InputObject $packages -Process { Install-WinGetPackage -MatchOption Equals -Id $_ -Source winget }
 
 # See if there is an update available
 Get-WinGetPackage | Where-Object -Property Id -In $packages | Sort-Object -Property Id | Format-Table -AutoSize
@@ -94,5 +94,5 @@ Install-Module -Name Terminal-Icons           # Icons for Get-ChildItem output
 A winget package is available to install the Cascadia/Caskaydia Nerd Font from the Nerd Fonts project, and there is also the official Microsoft repository: https://github.com/microsoft/cascadia-code
 
 ```pwsh
-Install-WinGetPackage -MatchOption Equals -Source winget-font -Id ryanoasis.CaskaydiaCove
+Install-WinGetPackage -MatchOption Equals -Id ryanoasis.CaskaydiaCove -Source winget-font 
 ```
