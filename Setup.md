@@ -29,7 +29,7 @@ $packages = @(
     # Terminal
     #"Microsoft.PowerShell"         # Installed previously
     #"Microsoft.WindowsTerminal"    # Should already be installed by default on Win 11
-    "Microsoft.Edit"                # Command line text editor for Git
+    #"Microsoft.Edit"               # Command line text editor for Git, should already be installed on Win 11
     "JanDeDobbeleer.OhMyPosh"       # To style the prompt
 
     # Dev
@@ -37,11 +37,10 @@ $packages = @(
     #"Git.Git"                      # Needs a custom install
     "astral-sh.uv"                  # Python
     "Microsoft.DotNet.SDK.10"       # .NET (latest version `Find-WinGetPackage Microsoft.DotNet.SDK`)
-    "OpenJS.NodeJS"                 # NodeJS and NPM
+    "OpenJS.NodeJS"                 # NodeJS and NPM (for mermaid-cli)
 
     # Work related
     "Microsoft.PowerBI"             # 
-    "Graphviz.Graphviz"             # Or mermaid-cli (npm) for graph creation
     "Microsoft.RemoteDesktopClient" # 
 
     # Tools
@@ -51,7 +50,7 @@ $packages = @(
 
     # Software
     "Apryse.XodoPDFReader"          #
-    "7zip.7zip"                     #
+    "M2Team.NanaZip"                # Or 7zip.7zip
     "Mozilla.Firefox"               #
     "Discord.Discord"               #
     "Amazon.Kindle"                 # 
