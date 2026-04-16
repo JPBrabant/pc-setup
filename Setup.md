@@ -75,9 +75,11 @@ See my learning-git repository for a script to install Git with the correct sett
 ## PowerShell modules
 
 ```pwsh
-#Install-Module -Name Microsoft.WinGet.Client # Already installed
-Install-Module -Name posh-git                 # Autocomplete for Git
-Install-Module -Name Terminal-Icons           # Icons for Get-ChildItem output
+#Install-Module -Name Microsoft.WinGet.Client          # Already installed
+Install-Module -Name posh-git -Scope CurrentUser       # Autocomplete for Git
+Install-Module -Name Terminal-Icons -Scope CurrentUser # Icons for Get-ChildItem output
+Install-Module -Name ImportExcel -Scope CurrentUser    # Excel support
+Install-Module -Name PSParquet -Scope CurrentUser      # Parquet files support
 ```
 
 ## Custom installations
@@ -91,9 +93,3 @@ Install-Module -Name Terminal-Icons           # Icons for Get-ChildItem output
 ## Font
 
 A winget package is available to install the Cascadia/Caskaydia Nerd Font from the Nerd Fonts project, and there is also the official Microsoft repository: [Cascadia Code](<https://github.com/microsoft/cascadia-code>).
-
-[CaskaydiaCove Nerd Font:](<https://www.nerdfonts.com/font-downloads>)
-
-```pwsh
-Install-WinGetPackage -MatchOption Equals -Id ryanoasis.CaskaydiaCove -Source winget-font 
-```
