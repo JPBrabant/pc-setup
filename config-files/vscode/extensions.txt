@@ -1,0 +1,5 @@
+TMDL             : https://marketplace.visualstudio.com/items?itemName=analysis-services.TMDL
+Python           : https://marketplace.visualstudio.com/items?itemName=ms-python.python
+PowerShell       : https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell
+C#               : https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
+Simple Alignment : https://marketplace.visualstudio.com/items?itemName=earshinov.simple-alignment
