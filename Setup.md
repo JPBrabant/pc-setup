@@ -42,6 +42,7 @@ $packages = @(
     # Work related
     "Microsoft.PowerBI"             # 
     "Microsoft.RemoteDesktopClient" # 
+    "Yaak.app"                      # Postman replacement
 
     # Tools
     "Microsoft.PowerToys"           # For Markdown and PDF preview, Always On Top and ZoomIt
@@ -65,7 +66,7 @@ $packages = @(
 ForEach-Object -InputObject $packages -Process { Install-WinGetPackage -MatchOption Equals -Id $_ -Source winget }
 
 # See if there is an update available
-Get-WinGetPackage | Where-Object -Property Id -In $packages | Sort-Object -Property Id | Format-Table -AutoSize
+Get-WinGetPackage | Where-Object -Property IsUpdateAvailable -Eq $true | Sort-Object -Property Id | Format-Table -AutoSize
 ```
 
 ## Special winget command for `Git`
