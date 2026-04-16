@@ -3,6 +3,8 @@ oh-my-posh init pwsh --config catppuccin | Invoke-Expression
 Import-Module -Name posh-git # Auto-complete for Git
 Import-Module -Name Microsoft.WinGet.Client # PowerShell style wrapper for WinGet
 Import-Module -Name Terminal-Icons # Icons for files in Get-ChildItems
+Import-Module -Name PSParquet # .parquet files
+Import-Module -Name ImportExcel # .xlsx files
 
 # Network Utilities
 function Get-IP { 
