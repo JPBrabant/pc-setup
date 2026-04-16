@@ -27,39 +27,41 @@ Import-Module -Name Microsoft.WinGet.Client
 $packages = @(
 
     # Terminal
-    #"Microsoft.PowerShell"         # Installed previously
-    #"Microsoft.WindowsTerminal"    # Should already be installed by default on Win 11
-    #"Microsoft.Edit"               # Command line text editor for Git, should already be installed on Win 11
-    "JanDeDobbeleer.OhMyPosh"       # To style the prompt
+    #"Microsoft.PowerShell"               # Installed previously
+    #"Microsoft.WindowsTerminal"          # Should already be installed by default on Win 11
+    #"Microsoft.Edit"                     # Command line text editor for Git, should already be installed on Win 11
+    "JanDeDobbeleer.OhMyPosh"             # To style the prompt
 
     # Dev
-    "Microsoft.VisualStudioCode"    #
-    #"Git.Git"                      # Needs a custom install
-    "astral-sh.uv"                  # Python
-    "Microsoft.DotNet.SDK.10"       # .NET (latest version `Find-WinGetPackage Microsoft.DotNet.SDK`)
-    "OpenJS.NodeJS"                 # NodeJS and NPM (for mermaid-cli)
+    "Microsoft.VisualStudioCode"          #
+    #"Git.Git"                            # Needs a custom install
+    "astral-sh.uv"                        # Python
+    "Microsoft.DotNet.SDK.10"             # .NET (latest version `Find-WinGetPackage Microsoft.DotNet.SDK`)
+    "OpenJS.NodeJS"                       # NodeJS and NPM (for mermaid-cli)
 
     # Work related
-    "Microsoft.PowerBI"             # 
-    "Microsoft.RemoteDesktopClient" # 
-    "Yaak.app"                      # Postman replacement
+    "Microsoft.PowerBI"                   # 
+    "Microsoft.RemoteDesktopClient"       # 
+    "Yaak.app"                            # Postman replacement
+    "JetBrains.DataGrip"                  # Oracle client
+    "Microsoft.SQLServerManagementStudio" # SQL Server client
 
     # Tools
-    "Microsoft.PowerToys"           # For Markdown and PDF preview, Always On Top and ZoomIt
-    "AutoHotkey.AutoHotkey"         #
-    "ShareX.ShareX"                 # Or Flameshot.Flameshot
+    "Microsoft.PowerToys"                 # For Markdown and PDF preview, Always On Top and ZoomIt
+    "AutoHotkey.AutoHotkey"               #
+    "ShareX.ShareX"                       # Or Flameshot.Flameshot
 
     # Software
-    "Apryse.XodoPDFReader"          #
-    "M2Team.NanaZip"                # Or 7zip.7zip
-    "Mozilla.Firefox"               #
-    "Discord.Discord"               #
-    "Amazon.Kindle"                 # 
-    "VideoLAN.VLC"                  # 
-    "Valve.Steam"                   # 
-    "Microsoft.BingWallpaper"       # 
-    "SteelSeries.GG"                # 
-    "DelugeTeam.DelugeBeta"         # 
+    "Apryse.XodoPDFReader"                #
+    "M2Team.NanaZip"                      # Or 7zip.7zip
+    "Mozilla.Firefox"                     #
+    "Discord.Discord"                     #
+    "Amazon.Kindle"                       # 
+    "VideoLAN.VLC"                        # 
+    "Valve.Steam"                         # 
+    "Microsoft.BingWallpaper"             # 
+    "SteelSeries.GG"                      # 
+    "DelugeTeam.DelugeBeta"               # 
 )
 
 # Install all packages
