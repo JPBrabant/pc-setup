@@ -1,10 +1,16 @@
 oh-my-posh init pwsh --config catppuccin | Invoke-Expression
 
-Import-Module -Name posh-git # Auto-complete for Git
-Import-Module -Name Microsoft.WinGet.Client # PowerShell style wrapper for WinGet
-Import-Module -Name Terminal-Icons # Icons for files in Get-ChildItems
-Import-Module -Name PSParquet # .parquet files
-Import-Module -Name ImportExcel # .xlsx files
+$modules = @(
+    'posh-git',                # Auto-complete for Git
+    'Microsoft.WinGet.Client', # PowerShell style wrapper for WinGet
+    'Terminal-Icons',          # Icons for files in Get-ChildItems
+    'PSParquet',               # .parquet files
+    'ImportExcel'              # .xlsx files
+)
+
+foreach ($m in $modules) {
+    Import-Module -Name $m -ErrorAction SilentlyContinue
+}
 
 # Network Utilities
 function Get-IP { 
@@ -14,14 +20,12 @@ function Get-IP {
                 | Sort-Object -Property InterfaceIndex `
                 | Select-Object -First 1
 
-    $ip = @{
-        Local = $localIP.IPAddress
-        External = $externalIP.Content 
+    [PSCustomObject]@{
+        Local    = $localIP.IPAddress
+        External = $externalIP.Content
     }
-
-    return $ip
 }
 
-# Common paths
-Set-Variable -Name DESKTOP -Value ([Environment]::GetFolderPath('Desktop')) -Option ReadOnly
-Set-Variable -Name DEV -Value ("C:\dev") -Option ReadOnly
+# Common path
+Set-Variable -Name DESKTOP -Value ([Environment]::GetFolderPath('Desktop')) -Option ReadOnly -ErrorAction SilentlyContinue
+Set-Variable -Name DEV -Value ("C:\dev") -Option ReadOnly -ErrorAction SilentlyContinue
