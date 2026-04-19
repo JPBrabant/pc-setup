@@ -45,6 +45,7 @@ $packages = @(
     "Yaak.app"                            # Postman replacement
     "JetBrains.DataGrip"                  # Oracle client
     "Microsoft.SQLServerManagementStudio" # SQL Server client
+    "Microsoft.AzureCLI"                  # 
 
     # Tools
     "Microsoft.PowerToys"                 # For Markdown and PDF preview, Always On Top and ZoomIt
