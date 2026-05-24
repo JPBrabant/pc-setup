@@ -3,3 +3,4 @@ Python           : https://marketplace.visualstudio.com/items?itemName=ms-python
 PowerShell       : https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell
 C#               : https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
 Simple Alignment : https://marketplace.visualstudio.com/items?itemName=earshinov.simple-alignment
+Azure Resources  : https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups
