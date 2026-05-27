@@ -37,6 +37,7 @@ $packages = @(
     #"Git.Git"                            # Needs a custom install
     "astral-sh.uv"                        # Python
     "Microsoft.DotNet.SDK.10"             # .NET (latest version `Find-WinGetPackage Microsoft.DotNet.SDK`)
+    "Microsoft.DotNet.UninstallTool"      # Tool to uninstall DotNet SDK
     "OpenJS.NodeJS"                       # NodeJS and NPM (for mermaid-cli)
 
     # Work related
