@@ -1,6 +1,15 @@
-TMDL             : https://marketplace.visualstudio.com/items?itemName=analysis-services.TMDL
-Python           : https://marketplace.visualstudio.com/items?itemName=ms-python.python
-PowerShell       : https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell
-C#               : https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
-Simple Alignment : https://marketplace.visualstudio.com/items?itemName=earshinov.simple-alignment
-Azure Resources  : https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups
+EXTENSIONS
+TMDL                         : https://marketplace.visualstudio.com/items?itemName=analysis-services.TMDL
+Python                       : https://marketplace.visualstudio.com/items?itemName=ms-python.python
+PowerShell                   : https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell
+C#                           : https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
+Simple Alignment             : https://marketplace.visualstudio.com/items?itemName=earshinov.simple-alignment
+Azure Resources              : https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureresourcegroups
+Fabric Data Engineering      : https://marketplace.visualstudio.com/items?itemName=SynapseVSCode.synapse
+Microsoft Kusto Explorer     : https://marketplace.visualstudio.com/items?itemName=ms-kusto.kusto-explorer-vscode
+SQL Server (mssql)           : https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql
+
+
+MCP SERVER
+Microsoft Fabric MCP Server  : https://marketplace.visualstudio.com/items?itemName=fabric.vscode-fabric-mcp-server
+Power BI Modeling MCP Server : https://marketplace.visualstudio.com/items?itemName=analysis-services.powerbi-modeling-mcp
