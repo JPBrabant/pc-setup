@@ -19,3 +19,7 @@ user_pref("sidebar.verticalTabs", true);
 user_pref("sidebar.verticalTabs.dragToPinPromo.dismissed", true);
 user_pref("sidebar.main.tools", "history,bookmarks");
 user_pref("sidebar.visibility", "always-show");
+
+// Bigger scrollbar
+// Also need to go into Windows Settings > Accessibility > Visual Effects > Always Show Scrollbar
+user_pref("widget.non-native-theme.scrollbar.style", 4);
