@@ -52,6 +52,7 @@ $packages = @(
     "Microsoft.PowerToys"                 # For Markdown and PDF preview, Always On Top and ZoomIt
     "AutoHotkey.AutoHotkey"               #
     "ShareX.ShareX"                       # Or Flameshot.Flameshot
+    "cjpais.Handy"                        # Voice transcription
 
     # Software
     "Apryse.XodoPDFReader"                #
