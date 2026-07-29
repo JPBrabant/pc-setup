@@ -100,6 +100,7 @@ Install-Module -Name PSParquet -Scope CurrentUser      # Parquet files support
 
 A winget package is available to install the Cascadia/Caskaydia Nerd Font from the Nerd Fonts project, and there is also the official Microsoft repository: [Cascadia Code](<https://github.com/microsoft/cascadia-code>).
 
-## Windows Developer Config (to look into)
+## Stuff to look into
 
-https://github.com/microsoft/WindowsDeveloperConfig
+- https://github.com/microsoft/WindowsDeveloperConfig
+- https://devolutions.net/unigetui/
