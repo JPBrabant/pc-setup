@@ -8,8 +8,8 @@
       "TaskSettings": {
         "Description": "",
         "Job": "RectangleRegion",
-        "UseDefaultAfterCaptureJob": true,
-        "AfterCaptureJob": "AnnotateImage",
+        "UseDefaultAfterCaptureJob": false,
+        "AfterCaptureJob": "AnnotateImage, CopyImageToClipboard, SaveImageToFile",
         "UseDefaultAfterUploadJob": true,
         "AfterUploadJob": "CopyURLToClipboard",
         "UseDefaultDestinations": true,
@@ -45,5 +45,5 @@
       }
     }
   ],
-  "ApplicationVersion": "19.0.2"
+  "ApplicationVersion": "21.0.0"
 }
