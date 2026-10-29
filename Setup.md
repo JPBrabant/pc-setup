@@ -103,4 +103,5 @@ A winget package is available to install the Cascadia/Caskaydia Nerd Font from t
 ## Stuff to look into
 
 - https://github.com/microsoft/WindowsDeveloperConfig
+- https://devblogs.microsoft.com/dotnet/introducing-dotnetup/
 - https://devolutions.net/unigetui/
